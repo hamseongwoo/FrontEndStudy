@@ -1,19 +1,22 @@
-const submit = document.querySelector(".submit-button");
+const yes = document.querySelector(".yes");
 
-const quiz = [];
+const no = document.querySelector(".no");
 
-quiz[0] = "함성우의 생일은? ex)1월 1일";
-quiz[1] = "함성우의 키는? (소수점 빼고)";
-quiz[2] = "함성우의 최애 음식은?";
+const answer = true;
 
-function firstQuiz() {
-    
+function firstYesAnswer(event) {
+    if(event){
+        alert("틀렸습니다 다시 풀어주세요");
+    }
+}
+function firstNoAnswer(event) {
+    if(event){
+        window.location.href ="http://127.0.0.1:5501/end/end.html";
+    }
+    else{
+        return;
+    }
 }
 
-function secondQuiz() {
-}
-
-function thirdQuiz() {
-}
-
-submit.addEventListener("click", submitClcik);
+yes.addEventListener("click", firstYesAnswer);
+no.addEventListener("click", firstNoAnswer);

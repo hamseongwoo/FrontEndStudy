@@ -4,27 +4,29 @@ header {
     align-items: center;
     font-size: 30px;
 }
-.quiz-container {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: centerz;
-    background-color: gray;
-    width: 550px;
-    height: 150px;
+.quiz {
+    text-align: center;
+    font-size: 40px;
 }
 .submit {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 100px;
 }
-.submit-text {
-    width: 500px;
-    height: 40px;
+
+.yes {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
 }
-.submit-button {
-    margin-left: 5px;
-    width: 50px;
-    height: 40px;
+.no {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.hidden{
+    display: none;
 }
